@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Powerlight Projects</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f8f8;
+color:#111;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+header{
+background:white;
+padding:20px 0;
+border-bottom:1px solid #eee;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:36px;
+font-weight:800;
+line-height:1;
+}
+
+.logo span{
+display:block;
+color:#f59e0b;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+
+.btn{
+background:#f59e0b;
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:600;
+display:inline-block;
+}
+
+.hero{
+padding:80px 0;
+background:white;
+}
+
+.hero-wrap{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero h1{
+font-size:70px;
+line-height:1.05;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.hero h1 span{
+color:#f59e0b;
+}
+
+.hero p{
+font-size:18px;
+color:#555;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.secondary-btn{
+padding:14px 28px;
+border:1px solid #ddd;
+border-radius:10px;
+text-decoration:none;
+color:#111;
+background:white;
+font-weight:600;
+}
+
+.hero-images{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+.laptop{
+background:#111;
+padding:10px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.laptop img{
+width:100%;
+max-width:320px;
+display:block;
+border-radius:12px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:42px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+padding:40px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.projects{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.project{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.project img{
+width:100%;
+border-radius:15px;
+margin-top:20px;
+}
+
+.project h3{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:15px;
+}
+
+.cta{
+background:#111;
+color:white;
+padding:70px 0;
+text-align:center;
+}
+
+footer{
+background:white;
+padding:50px 0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
+}
+
+@media(max-width:900px){
+
+.hero-wrap,
+.projects,
+.about,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr 1fr;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+}
+
+@media(max-width:600px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.hero-images{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+POWERLIGHT
+<span>PROJECTS</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<a href="#" class="btn">Get In Touch</a>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-wrap">
+
+<div>
+
+<h1>
+Bright ideas.<br>
+Beautiful websites.<br>
+Brands <span>built to grow.</span>
+</h1>
+
+<p>
+We design clean, modern websites and visual identities
+for businesses that want to look professional,
+build trust and attract more customers.
+</p>
+
+<div class="hero-buttons">
+<a href="#" class="btn">Start Your Project</a>
+<a href="#" class="secondary-btn">View Our Work</a>
+</div>
+
+</div>
+
+<div class="hero-images">
+
+<div class="laptop">
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="laptop">
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Services That Elevate Your Brand</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern responsive websites designed to convert visitors into customers.</p>
+</div>
+
+<div class="card">
+<h3>Brand Identity</h3>
+<p>Logos, colours and visual identities that make your business memorable.</p>
+</div>
+
+<div class="card">
+<h3>Graphics Design</h3>
+<p>Social media graphics, banners and promotional content.</p>
+</div>
+
+<div class="card">
+<h3>Website Refresh</h3>
+<p>Improve your existing website and modernise your online presence.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Latest Work</h2>
+</div>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Pawfect Taxis</h3>
+
+<p>
+A professional website for a trusted pet taxi and transport service.
+</p>
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<div class="project">
+
+<h3>Squared2 Developments</h3>
+
+<p>
+A bold modern construction website built to showcase services and projects.
+</p>
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container about">
+
+<div>
+
+<h2 style="font-size:48px;margin-bottom:20px;">
+Design with purpose.<br>
+Built on trust.
+</h2>
+
+<p style="color:#555;">
+Every project is built with care,
+communication and attention to detail.
+</p>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+<h3>Clean & Modern</h3>
+<p>Timeless designs that look professional on every device.</p>
+</div>
+
+<div class="feature">
+<h3>Clear Communication</h3>
+<p>We keep you updated throughout the project.</p>
+</div>
+
+<div class="feature">
+<h3>Focused on Results</h3>
+<p>Websites built to help your business grow.</p>
+</div>
+
+<div class="feature">
+<h3>Built with Care</h3>
+<p>Every detail matters and every brand deserves quality.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2 style="font-size:48px;margin-bottom:20px;">
+Ready to bring your brand to life?
+</h2>
+
+<p style="margin-bottom:30px;">
+Let's create a website that helps your business stand out.
+</p>
+
+<a href="#" class="btn">
+Get In Touch Today
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3 style="font-size:32px;">
+POWERLIGHT
+<span style="color:#f59e0b;">PROJECTS</span>
+</h3>
+
+<p>
+Designing websites, graphics and brands
+that help businesses stand out and grow.
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<p>Home</p>
+<p>About</p>
+<p>Services</p>
+<p>Portfolio</p>
+<p>Contact</p>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<p>powerlightprojects@outlook.com</p>
+<p>07858614507</p>
+<p>Leicester, UK</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
