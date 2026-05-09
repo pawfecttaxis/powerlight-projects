@@ -37,10 +37,24 @@ border-bottom:1px solid #eee;
 display:flex;
 justify-content:space-between;
 align-items:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+width:70px;
+height:70px;
+object-fit:contain;
 }
 
 .logo{
-font-size:36px;
+font-size:34px;
 font-weight:800;
 line-height:1;
 }
@@ -52,7 +66,7 @@ color:#f59e0b;
 
 nav ul{
 display:flex;
-gap:30px;
+gap:25px;
 list-style:none;
 }
 
@@ -60,6 +74,26 @@ nav a{
 text-decoration:none;
 color:#111;
 font-weight:500;
+}
+
+.right-header{
+display:flex;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.review-btn{
+border:1px solid #ddd;
+padding:12px 18px;
+border-radius:12px;
+text-decoration:none;
+color:#111;
+font-weight:600;
+background:white;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .btn{
@@ -269,11 +303,18 @@ display:none;
 <body>
 
 <header>
+
 <div class="container nav">
+
+<div class="logo-area">
+
+<img src="logo.png" alt="Powerlight Projects Logo">
 
 <div class="logo">
 POWERLIGHT
 <span>PROJECTS</span>
+</div>
+
 </div>
 
 <nav>
@@ -286,9 +327,24 @@ POWERLIGHT
 </ul>
 </nav>
 
-<a href="#" class="btn">Get In Touch</a>
+<div class="right-header">
+
+<a href="#" class="review-btn">
+⭐ Google Reviews
+</a>
+
+<a href="#" class="review-btn">
+⭐ Trustpilot
+</a>
+
+<a href="#" class="btn">
+Get In Touch
+</a>
 
 </div>
+
+</div>
+
 </header>
 
 <section class="hero">
@@ -310,8 +366,15 @@ build trust and attract more customers.
 </p>
 
 <div class="hero-buttons">
-<a href="#" class="btn">Start Your Project</a>
-<a href="#" class="secondary-btn">View Our Work</a>
+
+<a href="#" class="btn">
+Start Your Project
+</a>
+
+<a href="#" class="secondary-btn">
+View Our Work
+</a>
+
 </div>
 
 </div>
